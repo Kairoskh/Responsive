@@ -1,0 +1,341 @@
+/*Cuerpo de la página*/
+body {
+    font: 15px Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(216, 215, 213);
+}
+/*Quitar subrayadado en enlaces*/
+a:link
+{
+text-decoration:none;
+}
+/*Ajustar CV y fondo h1*/
+#centrar {
+    text-align: center;
+}
+.fondo{
+    background-color: #24282b;
+    border-radius: 5px;
+}
+/*estilos globales*/
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.boton1 {
+    height: 25px;
+    background-color: rgb(60, 255, 0);
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+/*Encabezado*/
+header {
+    background-color: #24282b;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid rgb(25, 248, 55);
+}
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+#marca {
+    float: left;
+}
+#marca h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+.resaltado, .actual a{
+    color: #12f71d;
+    font-weight: bold;
+}
+header a:hover{
+    color:rgb(0, 38, 255)
+}
+/* cabecera*/
+#cabecera {
+    min-height: 200px;
+    background: url(../images/portada.jpg) no-repeat 0 -200px;
+    text-align: center;
+    color: white;
+}
+#cabecera h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#cabecera {
+    font-size: 20px;
+}
+.cabe {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: rgb(31, 255, 1);
+}
+/*boletin de info*/
+#boletin {
+    padding: 15px;
+    color: white;
+    background: #24282b;
+}
+#boletin h2 {
+    float: left;
+}
+#boletin form {
+    float: right;
+    margin-top: 15px;
+}
+#boletin input [type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/*Cajas para el Índice*/
+#cajas {
+    margin-top: 20px;
+}
+#cajas .caja {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#cajas .caja img {
+    width: 90px;
+}
+/* Footer o pie de página*/
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #000000;
+    text-align-last: center;
+}
+/*Span*/
+span {
+    color: rgb(11, 118, 241);
+}
+/* h1,h2 y listas*/
+h1 {
+    color: rgb(71, 233, 106);
+}
+h2 {
+    color: rgb(5, 238, 5);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+.color{
+    color: #021bfa;
+}
+ul { 
+    list-style-type: disc;
+    padding: 10px;
+    margin: 15px; 
+}
+ol {   
+    padding: 10px;
+    margin: 15px;
+    list-style-type: lower-alpha;
+}
+/* Formularios*/
+.boton2 {
+    height: 20px;
+    background-color: rgb(102, 255, 0);
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Aside lateral derecho*/
+.lateral {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+.oscuro {
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Artículo*/
+.columna {
+    float: left;
+    width: 65%;
+}
+/*Tabla de Agenda*/
+table, th, td {
+    border:2px solid black;
+    border-collapse: collapse;
+    table-layout:fixed; 
+    width: 100%;
+}
+th {
+    background-color: #ff8b06;
+}
+td > input { 
+    width: 80%; 
+}
+td > p > input { 
+    width: 80%; 
+}
+td{
+    background-color: #96cdd4;   
+}
+th, td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*Tabla web*/
+.imgweb {
+    margin: 10px auto 10px;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+/*Formulario 2*/
+legend {
+    color: blue;
+}
+select, input {
+    margin-top: 5px;
+}
+.labelf{
+    display: inline-block;
+    width: 180px;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Formulario Libre*/
+.input, textarea {
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+.textarea {
+    height: 120px;
+    background-color: rgb(174, 221, 240);
+}
+.input  {
+    background-color: rgb(174, 221, 240);
+    color: black;
+}
+.input1  {
+    text-align: center;
+    background-color: rgb(3, 243, 35);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 35px;
+    border: 5px solid gray;
+    margin-bottom: 5px; 
+    font-family: monospace;
+    font-size: 20px;
+}
+.legend {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.label {
+    font-family: cursive;
+    font-size: 20px;
+}
+.iban {
+    background-color: rgb(174, 221, 240);
+    color: black;
+}
+.select {
+    background-color: rgb(174, 221, 240);
+}
+/* Hacer Portafolio Responsive*/
+/* Para SmartPhones / Móviles: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+/* Para Tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* Para ordenadores de mesa: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+/*Hacer Header responsive tablets y moviles*/
+@media only screen and (max-width: 600px) {
+header li, header > nav > ul > li {
+    width: 100%;
+    display: block;
+    float: left;
+    padding-bottom: 10px;
+}
+}
+/*RESPONSIVE (disminuir tamaño de imagen cuando sea del tamaño del movil)*/
+@media only screen and (max-width: 767px) {
+.imgweb {
+    width: 30px;
+    height: 30px;
+}
+}
+/*RESPONSIVE (disminuir letra cuando sea del tamaño del movil)*/
+@media only screen and (max-width: 767px) {
+table {
+    font-size: 7px;
+}
+}
+/*RESPONSIVE (disminuir tamaño de input, textarea en Formulario 1 y input file en Formulario 2 cuando sea del tamaño del movil)*/
+@media only screen and (max-width: 767px) {
+.tam {
+   width: 200px;
+}
+}

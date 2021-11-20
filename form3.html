@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Layout HTML5 Formulario Libre">
+    <meta name="keywords" content="diseño web, desarrollo web, seo,posicionamiento web">
+    <meta name="author" content="Juan Félix">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon4.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Formulario Libre</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+                <div id="marca">
+                    <h1><span class="resaltado">Tareas LND ASIR 2º Año</span> Formulario Libre</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="web.html">Web</a></li>
+                        <li><a href="form1.html">Formulario 1</a></li>
+                        <li><a href="form2.html">Formulario 2</a></li>
+                        <li class="actual"><a href="form3.html">Formulario libre</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <section id="cabecera">
+        <div class="contenedor">
+            <h2 class="cabe">Tareas LND ASIR 2º</h2>
+            <p>Formulario Libre</p>
+        </div>
+    </section>
+        <section id="boletin">
+            <div class="contenedor">
+                <h2>Suscribete para más información</h2>
+                <form>
+                    <input type="email" name="email" placeholder="Ingresa tu email...">
+                    <button type="submit" class="boton1">Unete</button>
+                </form>
+            </div>
+        </section>
+            <div class="contenedor">
+                <article class="columna col-8 col-s-12">
+                    <div class="formulario">
+                            
+                        <h3>Al hacer click <input type="button" class="boton2" value="aquí" onClick="window.location ='https://www.caixabank.es/index_es.html';"> te redirigirá a la página oficial de la Caixa.</h3>
+                        <h3>Al hacer click <input type="button" class="boton2" value="aquí" onClick="window.location ='https://www.bbva.es/personas.html';"> te redirigirá a la página oficial de BBVA.</h3>
+                        <h3>RELLENA LOS SIGUIENTES CAMPOS PARA SOLICITAR TU PRÉSTAMO BANCARIO:</h3>
+                        <br>
+                        <form method="get" action="Formulario.php">
+                                <fieldset>
+                                    <legend class="legend">Información del usuario</legend>
+                            <br>
+                                    <label class="label" for="nombre">Nombre:</label>
+                                        <input tabindex="1" class="input" type="text" id="nombre" placeholder="Ingresa tu nombre" maxlength="20" required pattern="[A-Za-z ]{1,20}" title="Ingresa tu nombre">
+                            <br>
+                                    <label class="label" for="apellidos">Apellidos:</label>
+                                        <input tabindex="2" class="input" type="text" id="apellidos" placeholder="Ingresa tus apellidos" maxlength="50" required pattern="[A-Za-z ]{1,50}" title="Ingresa tus apellidos">
+                            <br>
+                                    <label class="label" id="sex" tabindex="3">Sexo:</label>
+                                        <input type="radio" name="sexo" id="sexo-m" value="m" required/> 
+                                    <label class="label" for="sexo-m">Mujer</label>
+                                        <input type="radio" name="sexo" id="sexo-h" value="h" required/> 
+                                    <label class="label" for="sexo-h">Hombre</label>
+                                        <input type="radio" name="sexo" id="sexo-n" value="n" required/> 
+                                    <label class="label"  for="sexo-n">No binario</label>
+                            <br><br>
+                                    <label class="label" for="DNI">DNI:</label>
+                                        <input tabindex="4" class="input" type="text" id="DNI" name="DNI" pattern="[0-9]{8}[A-Z]{1}" required placeholder="11.111.111-X" title="Ingresa tu DNI">
+                            <br>
+                                    <label class="label" for="direccion">Dirección:</label>
+                                        <input class="input" type="text" name="direccion" id="direccion" maxlength="70" title="Ingresa tu dirección">
+                            <br>
+                                    <label class="label" for="codigo">Código Postal:</label>
+                                        <input tabindex="5" class="input" type="text" name="codigo" id="codigo" placeholder="11111" maxlength="5" pattern="[0-9]{5}" required title="Ingresa tu código postal">
+                            <br>
+                                    <label class="label" for="poblacion">Población:</label>
+                                        <input class="input" type="text" name="poblacion" id="poblacion" maxlength="40" required title="Ingresa tu población">
+                            <br>
+                                    <label class="label" for="emailaddress">Correo: </label>      
+                                        <input tabindex="6" class="input" type="email" id="emailaddress" placeholder="Ingresa tu correo @..." title="Ingresa tu correo @..." required>
+                            <br>
+                                    <label class="label" for="renta">Declaración de la renta:</label>
+                                        <input  class="input" type="file" id="renta">
+                            <br>
+                                    <label class="label" for="telefono">Teléfono</label>
+                                        <input tabindex="7" class="input"  type="tel" id="telefono" placeholder="Ingresa tu Teléfono +34 6xx xxxx xx" pattern="[0-9]{1,15}" required title="Ingresa tu Teléfono">
+                            <br>
+                                    <label class="label">Estado actual:</label>
+                            <br>
+                                    <select class="select" name="seleccion">
+                                        <option value="opcion1" >Soltero/a</option>
+                                        <option value="opcion2" >Casado/a</option>
+                                        <option value="opcion2" >En una relación</option>
+                                    </select>
+                            <br>
+                                    <label class="label" >Situación laboral:</label>
+                            <br>
+                                    <select class="select" name="lista de seleccion" size="4" required>
+                                        <option value="opcion1" >Trabajando.</option>
+                                        <option value="opcion2" >Estudiando.</option>
+                                        <option value="opcion3" >Estudia y trabaja.</option>
+                                        <option value="opcion4" >En el paro.</option>
+                                        <option value="opcion5" >Ninguna de als anteriores.</option>
+                                    </select>
+                            <br>
+                                    <label class="label" id="iban">Coloca tu Iban aquí:</label>
+                            <br>
+                                        <input tabindex="8" class="iban" type="text" name="cdp" placeholder="Código del País" title="Código del País" pattern="[A-Z]{2}" maxlength="2" required>
+                                        <input tabindex="9" class="iban" type="text" name="dc1" placeholder="Dígito de Control" title="Dígito de Control" pattern="[0-9]{2}" maxlength="2" required>
+                                        <input tabindex="10" class="iban" type="text" name="cb" placeholder="Código de Banco" title="Código de Banco" pattern="[0-9]{4}" maxlength="4" required>
+                                        <input tabindex="11" class="iban" type="text" name="sc" placeholder="Sucursal de la Cuenta" title="Sucursal de la Cuenta" pattern="[0-9]{4}" maxlength="4" required>
+                                        <input tabindex="12" class="iban" type="text" name="dc2" placeholder="Dígito de Control" title="Dígito de Control" pattern="[0-9]{2}" maxlength="2" required>
+                                        <input tabindex="13" class="iban" type="text" name="nc" placeholder="Número de cuenta" title="Número de cuenta" pattern="[0-9]{10}" maxlength="10" required>
+                            <br><br>
+                                    <label class="label" id="img">Ejemplo:</label>
+                                        <img src="images/images9.jpg" alt="Ejemplo IBAN" class="col-12 col-s-12">
+                            <br> 
+                                    <label class="label" for="fecha">Fecha actual:</label>
+                                    <input class="input" type="date" name="fecha" id="fecha">
+                            </fieldset>
+
+                                <fieldset>
+                                    <legend class="legend">Acceso:</legend>
+
+                                    <label class="label" for="usuario">Usuario: </label>      
+                                        <input tabindex="14" class="input" type="text" id="usuario" placeholder="Ingresa tu usuario" maxlength="10" required pattern="[A-Za-z0-9]{1,10}" title="Ingresa tu usuario">                        
+                            <br>
+                                    <label class="label" for="clave">Contraseña:</label>
+                                        <input tabindex="15" class="input" type="password" id="clave" placeholder="Ingresa tu contraseña" maxlength="15" required pattern="[A-Za-z0-9]{1,15}" title="Ingresa tu contraseña">      
+                            <br>
+                                </fieldset>
+                             <fieldset>
+                                 <legend class="legend">Más datos:</legend>
+                                    <label class="label" for="comentario"> Porque solicita el préstamo:</label>
+                            <br>
+                                        <textarea class="textarea" name="texto" id="comentario" cols="50" rows="3">Cuentanos tu situación...</textarea>
+                            <br>
+                                    <label class="label">¿Te ha resultado dificil rellenar los campos?</label>
+                            <br><br>
+                                    <select class="select" name="lista de seleccion" size="2">
+                                        <option value="opcion1" >Si</option>
+                                        <option value="opcion2" >No</option>
+                                        <option value="opcion3" >Omitir</option>
+                                    </select>
+                            <br><br>
+                                    <label class="label" tabindex="16">¿De cuanto es tu solicitud?</label>
+                            <br><br>
+                                            <input tabindex="17" type="radio" name="elije" value="poco" required>1000€-2000€
+                                        <br>
+                                            <input tabindex="18" type="radio" name="elije" value="mas" required>2000€-5000€
+                                        <br>
+                                            <input tabindex="19" type="radio" name="elije" value="mucho" required>5000€-...
+                                        <br>
+                            <br>
+                                    <label class="label" tabindex="20">¿Nos volverias a visitar?</label>
+                                        <p>
+                                            <input  type="radio" name="valor" value="SI" required> Si
+                                            <input  type="radio" name="valor" value="NO" required> No
+                                        </p>
+                            <br>
+                                    <label class="label" id="varios">Selecciona a que banco o bancos perteneces (puedes seleccionar más de uno):</label>
+                            <br><br>
+                                            <input type="checkbox">Caixa 
+                                        <br>
+                                            <input type="checkbox">BBVA
+                                        <br>
+                                            <input type="checkbox">Santander
+                            <br><br>
+                                        <input  class="input1" type="submit" value="Enviar datos">
+                            <br>
+                                        <fieldset>         
+                                                <legend class="legend">Botones de reset y envío:</legend>   
+                                                <button class="boton1" type="reset">Resetear</button>         
+                                                <button class="boton1" type="submit">Enviar</button>       
+                                        </fieldset>   
+                                </fieldset>
+                            </form>
+                            <br>
+                            <h2><button type="button" onclick="alert('Muchas gracias por valorarnos, ¡¡¡esperamos verte pronto!!!')"> Haz clic aquí</button></h2>
+                            </div>
+                     </article>
+                <aside class="lateral col-3 col-s-12">
+                    <div class="oscuro">
+                        <h3>Formulario Libre</h3>
+                        <p>En este apartado podemos ver el resultado de la tarea Formulario Libre, en el que vemos un Formulario mucho más complejo que el Formulario 1 y 2, en este podemos ver el uso de codigos que nos indican campos requeridos, campos que se deben colocar para poder enviar los datos rellenados, etc...</p>
+                    </div>
+                </aside>     
+            </div>
+            <footer>
+                <p>Tareas y proyectos ASIR 2º AÑO LND, Copyright &copy; 2021. Juan Félix Jiménez Heredia.</p>
+        </footer> 
+</body>
+</html>
